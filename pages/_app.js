@@ -13,7 +13,6 @@ function MyApp({ Component, pageProps }) {
 
     useEffect(() => {
         const handleRouteChange = url => {
-            console.log(url)
             NProgress.start()
         }
 

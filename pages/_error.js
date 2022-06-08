@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 
-export const Err = ({sr, su}) =>{
+ const Err = ({sr, su}) =>{
 
     const router = useRouter()
     useEffect(() => {
@@ -25,3 +25,5 @@ export const Err = ({sr, su}) =>{
         </>
     )
 }
+
+export default Err

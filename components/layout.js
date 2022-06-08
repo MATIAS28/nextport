@@ -4,7 +4,7 @@ const Layout = (props) => {
     return(
         <>
         <Head>
-            <title>Portafolio Web</title>
+            <title>Matias Muñoz</title>
         </Head>
         <Nav/>
         </>

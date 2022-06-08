@@ -1,4 +1,3 @@
-import { Html } from "next/document";
 import { Err } from "./_error";
 
 const GitHub = ({user, repos, status_repo, status_user}) => {
@@ -10,10 +9,10 @@ const GitHub = ({user, repos, status_repo, status_user}) => {
     return(
         <>
         <div className="row">
-            <section className="col-md-4 ">
-                <article className="card card-body">
+            <section className="col-md-4">
+                <article className="card bg-dark">
                     <img src={user.avatar_url} alt="" />
-                    <h1 className="text-center text-danger"> {user.login} </h1>
+                    <h1 className="text-center text-light"> {user.login} </h1>
                 </article>
             </section>
 
@@ -21,18 +20,28 @@ const GitHub = ({user, repos, status_repo, status_user}) => {
                 {
                     repos.map((repo, i) => {
                         return(
-                            <div className="card w-75 bg-dark my-2" key={i}>
-                                <article className="card-body">
-                                <h5 class="card-title text-white">{repo.name}</h5>
-                                <p class="card-text text-warning">la mayoría son repositorios viejos!</p>
-                                <a href={repo.html_url} target="_blank" class="btn btn-light">ver repositorio</a>
-                                </article>
-                            </div>
+                        <div className="card w-75 bg-dark my-2" key={i}>
+                            <article className="card-body">
+                            <h5 className="card-title text-white">{repo.name}</h5>
+                            <p className="card-text text-warning">la mayoría son repositorios viejos!</p>
+                            <a href={repo.html_url} target="_blank" className="btn btn-light">ver repositorio</a>
+                            </article>
+                        </div>
                         )
                     })
                 }
             </section>
         </div>
+
+        <style jsx>
+        {`
+        @media(max-width: 990px){
+            .card{
+                width: 100% !important;
+            }
+        }
+        `}
+        </style>
         </>
     )
 };

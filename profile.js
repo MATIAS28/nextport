@@ -41,5 +41,10 @@ export const Skills = [
     {
         s: 'Bootstrap',
         p: '55%'
+    },
+
+    {
+        s: 'UI/UX :(',
+        p: '10%'
     }
 ]
