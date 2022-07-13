@@ -15,7 +15,7 @@ const index = (props) => {
                         <h1 className="text-dark">Matias Muñoz</h1>
                         <h5 className="text-danger">Desarrollador FullStack Junior</h5>
                         <p>
-                            Soy desarrollador web hace mas de 1 año, he aprendido desarrollo web con cursos, y de forma
+                            Soy desarrollador web hace mas de 2 año, he aprendido desarrollo web con cursos, y de forma
                             autodidacta varias tecnologìas tanto de <span className="text-warning"> Backend</span> como de
                             <span className="text-warning"> Frontend</span>. Me he dedicado mucho mas al Backend utilizando
                             tecnologìas como las que salen en skills y muchas otras mas, tambien tengo conocimientos solidos en 
