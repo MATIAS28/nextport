@@ -7,12 +7,14 @@ const index = (props) => {
     const Apps = props.Apps
     return(
     <>
-        <header className="row">
+        <header className="">
         <div className="col-12">
             <div className="">
                 <div className="row">
-                    <div className="">
-                        <h1 className="text-dark">Matias Muñoz</h1>
+                    <div className="perfil-container bg-dark text-white rounded">
+                        <img className="fdp rounded shadow-sm" src="/img/fdp.jpg" alt=""/>
+                        <div className="p-4">
+                        <h1 className="text-white">Matias Muñoz</h1>
                         <h5 className="text-danger">Desarrollador FullStack Junior</h5>
                         <p>
                             Soy desarrollador web hace mas de 2 año, he aprendido desarrollo web con cursos, y de forma
@@ -24,6 +26,7 @@ const index = (props) => {
                             servicios como AWS, Heroku y Vercel.
                         
                         </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -55,9 +58,10 @@ const index = (props) => {
                 <h2 className="text-center text-danger">Portafolio</h2>
                 <div className="con-card">
                 {Apps.map((a, i) => {
+                let display = a._id == '641a0cdecfec39d736b31f6c' ? 'block' : 'none'
                 return(
                 <div key={i}>
-                <AppsComponent name={a.name} p={a.practices} t={a.tec} u={a.url} g={a.git} d={a.desc} s={a.server} />
+                <AppsComponent name={a.name} p={a.practices} t={a.tec} u={a.url} g={a.git} d={a.desc} s={a.server} display={display}/>
                 </div>                  
                 )
                 })}
@@ -73,6 +77,18 @@ const index = (props) => {
         margin-bottom: 2rem;
     }
 
+    .perfil-container{
+        display: flex;
+        align-items: center;
+    }
+
+    .fdp{
+        width: 14rem;
+        height: 12rem;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+
     section{
         padding: 1rem;
     }
@@ -80,6 +96,14 @@ const index = (props) => {
     .con-card{
         width: 100%;
         display: grid;
+    }
+
+    @media(max-width: 768px){
+        .perfil-container{
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
     }
     `}
     </style>

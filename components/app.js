@@ -1,8 +1,10 @@
 import Link from 'next/link'
+import { Carousel } from './carousel'
 export const AppsComponent = (props) => {
     return(
     <>
     <div className="card">
+        <Carousel display={props.display}/>
     <div className="card-body">
         
         <h5 className="card-title">{props.name}</h5>
@@ -14,10 +16,10 @@ export const AppsComponent = (props) => {
     </ul>
     <div className="card-body">
         <Link href={props.u}><a target='_blank' className="btn btn-outline-dark">Página</a></Link>
-        <Link href={props.g}><a target='_blank' className=""><img src="/img/git.png" alt=""/></a></Link>
+        {props.g !== '' && <Link href={props.g}><a target='_blank' className=""><img src="/img/git.png" alt=""/></a></Link>}
         
     </div>
-    <span className='bg-dark text-light'>Desplegado en {props.s} </span>
+    <span className='bg-dark text-light'>{props.s === 'No ha sido desplegada' ? 'No ha sido desplegada' : 'Desplegado en'+' '+props.s} </span>
     </div>
 
     <style jsx>
