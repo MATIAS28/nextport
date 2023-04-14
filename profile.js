@@ -44,7 +44,7 @@ export const Skills = [
     },
 
     {
-        s: 'UI/UX :(',
-        p: '10%'
+        s: 'UI/UX',
+        p: '60%'
     }
 ]
