@@ -17,14 +17,11 @@ const index = (props) => {
                         <h1 className="text-white">Matias Muñoz</h1>
                         <h5 className="text-danger">Desarrollador FullStack Junior</h5>
                         <p>
-                            Soy desarrollador web hace mas de 2 año, he aprendido desarrollo web con cursos, y de forma
-                            autodidacta varias tecnologìas tanto de <span className="text-warning"> Backend</span> como de
-                            <span className="text-warning"> Frontend</span>. Me he dedicado mucho mas al Backend utilizando
-                            tecnologìas como las que salen en skills y muchas otras mas, tambien tengo conocimientos solidos en 
-                            <span className="text-warning"> Javascript</span>. He subido varios proyectos a <span className="text-warning">GitHub </span>
-                             y algunos han sido desplegados en 
-                            servicios como AWS, Heroku y Vercel.
-                        
+                            Soy desarrollador web con más de 2 años de experiencia con sólidos conocimientos en <span className="text-warning"> Javascript</span>. Aprendí desarrollo web mediante cursos y de forma autodidacta, explorando varias tecnologías tanto en el <span className="text-warning"> Frontend</span> como en el Backend
+                            . Me he enfocado un poco mas en el <span className="text-warning"> Backend</span>, 
+                            utilizando tecnologías como las que se detallan en mis habilidades (Skills), así como otras más.
+                            He subido varios proyectos a <span className="text-warning">GitHub </span> y algunos de ellos han sido desplegados en servicios de la nube como AWS, Heroku y Vercel
+                            . Me apasiona el desarrollo web y estoy comprometido con seguir aprendiendo y mejorando constantemente en mi carrera como desarrollador.
                         </p>
                         </div>
                     </div>
