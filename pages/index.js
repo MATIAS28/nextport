@@ -12,7 +12,7 @@ const index = (props) => {
             <div className="">
                 <div className="row">
                     <div className="perfil-container bg-dark text-white rounded">
-                        <img className="fdp rounded shadow-sm" src="/img/fdp.jpg" alt=""/>
+                        <img className="fdp rounded shadow-sm" src="/img/fdp.png" alt=""/>
                         <div className="p-4">
                         <h1 className="text-white">Matias Muñoz</h1>
                         <h5 className="text-danger">Desarrollador FullStack Junior</h5>
