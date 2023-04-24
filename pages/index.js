@@ -10,19 +10,23 @@ const index = (props) => {
         <header className="">
         <div className="col-12">
             <div className="">
-                <div className="row">
-                    <div className="perfil-container bg-dark text-white rounded">
-                        <img className="fdp rounded shadow-sm" src="/img/fdp.png" alt=""/>
-                        <div className="p-4">
-                        <h1 className="text-white">Matias Muñoz</h1>
-                        <h5 className="text-danger">Desarrollador FullStack Junior</h5>
-                        <p>
-                            Soy desarrollador web con más de 2 años de experiencia y sólidos conocimientos en <span className="text-warning"> Javascript</span>. Aprendí desarrollo web mediante cursos y de forma autodidacta, explorando varias tecnologías tanto en el <span className="text-warning"> Frontend</span> como en el Backend
-                            . Me he enfocado un poco mas en el <span className="text-warning"> Backend</span>, 
-                            utilizando tecnologías como las que se detallan en mis habilidades (Skills), así como otras más.
-                            He subido varios proyectos a <span className="text-warning">GitHub </span> y algunos de ellos han sido desplegados en servicios de la nube como AWS, Heroku y Vercel
-                            . Me apasiona el desarrollo web y estoy comprometido con seguir aprendiendo y mejorando constantemente en mi carrera como desarrollador.
-                        </p>
+                <div className="card mb-3">
+                    <div className="row g-0">
+                        <div className="col-md-4">
+                        <img className="img-fluid rounded-start fdp" src="/img/fdp.png" alt=""/>
+                        </div>
+                        <div className="col-md-8 bg-dark">
+                            <div className="card-body">
+                                <h3 className="text-white">Matias Muñoz</h3>
+                                <h5 className="text-danger">Desarrollador FullStack Junior</h5>
+                                <p className="text-white">
+                                    Soy desarrollador web con más de 2 años de experiencia y sólidos conocimientos en <span className="text-warning"> Javascript</span>. Aprendí desarrollo web mediante cursos y de forma autodidacta, explorando varias tecnologías tanto en el <span className="text-warning"> Frontend</span> como en el Backend
+                                    . Me he enfocado un poco mas en el <span className="text-warning"> Backend</span>, 
+                                    utilizando tecnologías como las que se detallan en mis habilidades (Skills), así como otras más.
+                                    He subido varios proyectos a <span className="text-warning">GitHub </span> y algunos de ellos han sido desplegados en servicios de la nube como AWS, Heroku y Vercel
+                                    . Me apasiona el desarrollo web y estoy comprometido con seguir aprendiendo y mejorando constantemente en mi carrera como desarrollador.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -55,10 +59,9 @@ const index = (props) => {
                 <h2 className="text-center text-danger">Portafolio</h2>
                 <div className="con-card">
                 {Apps.map((a, i) => {
-                let display = a._id == '641a0cdecfec39d736b31f6c' ? 'block' : 'none'
                 return(
-                <div key={i}>
-                <AppsComponent name={a.name} p={a.practices} t={a.tec} u={a.url} g={a.git} d={a.desc} s={a.server} display={display}/>
+                <div className="my-4" key={i}>
+                <AppsComponent name={a.name} p={a.practices} t={a.tec} u={a.url} g={a.git} d={a.desc} s={a.server} imgs={a.imgs}/>
                 </div>                  
                 )
                 })}
@@ -80,8 +83,7 @@ const index = (props) => {
     }
 
     .fdp{
-        width: 14rem;
-        height: 12rem;
+        height: 100%;
         -webkit-filter: grayscale(100%);
         filter: grayscale(100%);
     }
@@ -97,7 +99,6 @@ const index = (props) => {
 
     @media(max-width: 768px){
         .perfil-container{
-        padding-top: 2rem;
         display: flex;
         flex-direction: column;
     }

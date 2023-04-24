@@ -4,7 +4,7 @@ export const AppsComponent = (props) => {
     return(
     <>
     <div className="card">
-        <Carousel display={props.display}/>
+        <Carousel imgs={props?.imgs}/>
     <div className="card-body">
         
         <h5 className="card-title">{props.name}</h5>
@@ -19,7 +19,7 @@ export const AppsComponent = (props) => {
         {props.g !== '' && <Link href={props.g}><a target='_blank' className=""><img src="/img/git.png" alt=""/></a></Link>}
         
     </div>
-    <span className='bg-dark text-light'>{props.s === 'No ha sido desplegada' ? 'No ha sido desplegada' : 'Desplegado en'+' '+props.s} </span>
+    <span className='bg-primary text-light'>{props.s === 'No ha sido desplegada' ? 'No ha sido desplegada' : 'Desplegado en'+' '+props.s} </span>
     </div>
 
     <style jsx>
