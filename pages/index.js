@@ -20,10 +20,10 @@ const index = (props) => {
                                 <h3 className="text-white">Matias Muñoz</h3>
                                 <h5 className="text-danger">Desarrollador FullStack</h5>
                                 <p className="text-white">
-                                    ¡Hola! Soy un desarrollador web <span className="text-warning">FullStack</span>
+                                    ¡Hola! Soy un desarrollador web <span className="text-warning">FullStack </span>
                                     con más de 3 años de experiencia. Destaco por mi enfoque apasionado y creativo, así como por mi capacidad para enfrentar grandes retos
                                     . He trabajado con diversas tecnologías, frameworks y servicios en la nube. Mi experiencia incluye el desarrollo de una red social con el 
-                                    <span className="text-warning">MEAN </span>
+                                    <span className="text-warning"> MEAN </span>
                                     stack y un e-commerce completo utilizando el stack <span className="text-warning">MERN</span>
                                     . Mi enfoque se basa en la comunicación abierta, la adaptabilidad y el trabajo en equipo. Estoy listo para aportar soluciones innovadoras 
                                     y contribuir al éxito de cualquier  proyecto
