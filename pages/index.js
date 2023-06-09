@@ -18,13 +18,16 @@ const index = (props) => {
                         <div className="col-md-8 bg-dark">
                             <div className="card-body">
                                 <h3 className="text-white">Matias Muñoz</h3>
-                                <h5 className="text-danger">Desarrollador FullStack Junior</h5>
+                                <h5 className="text-danger">Desarrollador FullStack</h5>
                                 <p className="text-white">
-                                    Soy desarrollador web con más de 2 años de experiencia y sólidos conocimientos en <span className="text-warning"> Javascript</span>. Aprendí desarrollo web mediante cursos y de forma autodidacta, explorando varias tecnologías tanto en el <span className="text-warning"> Frontend</span> como en el Backend
-                                    . Me he enfocado un poco mas en el <span className="text-warning"> Backend</span>, 
-                                    utilizando tecnologías como las que se detallan en mis habilidades (Skills), así como otras más.
-                                    He subido varios proyectos a <span className="text-warning">GitHub </span> y algunos de ellos han sido desplegados en servicios de la nube como AWS, Heroku y Vercel
-                                    . Me apasiona el desarrollo web y estoy comprometido con seguir aprendiendo y mejorando constantemente en mi carrera como desarrollador.
+                                    ¡Hola! Soy un desarrollador web <span className="text-warning">FullStack</span>
+                                    con más de 3 años de experiencia. Destaco por mi enfoque apasionado y creativo, así como por mi capacidad para enfrentar grandes retos
+                                    . He trabajado con diversas tecnologías, frameworks y servicios en la nube. Mi experiencia incluye el desarrollo de una red social con el 
+                                    <span className="text-warning">MEAN </span>
+                                    stack y un e-commerce completo utilizando el stack <span className="text-warning">MERN</span>
+                                    . Mi enfoque se basa en la comunicación abierta, la adaptabilidad y el trabajo en equipo. Estoy listo para aportar soluciones innovadoras 
+                                    y contribuir al éxito de cualquier  proyecto
+
                                 </p>
                             </div>
                         </div>
