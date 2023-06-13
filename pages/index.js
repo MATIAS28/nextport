@@ -26,7 +26,7 @@ const index = (props) => {
                                     <span className="text-warning"> MEAN </span>
                                     stack y un e-commerce completo utilizando el stack <span className="text-warning">MERN</span>
                                     . Mi enfoque se basa en la comunicación abierta, la adaptabilidad y el trabajo en equipo. Estoy listo para aportar soluciones innovadoras 
-                                    y contribuir al éxito de cualquier  proyecto
+                                    y contribuir al éxito de cualquier  proyecto.
 
                                 </p>
                             </div>
