@@ -3,16 +3,25 @@ import Link from "next/link";
 const Nav = () => {
     return(
         <>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark text-white">
-  <div className="container-fluid">
-    <Link href="/">
-    <a className="navbar-brand text-light">Portafolio</a>
-    </Link>
-    <Link href="/github">
-          <a className="nav-link text-light">GitHub</a>
-    </Link>
-  </div>
-</nav>
+        <nav style={{backgroundColor: '#00001a'}} className="navbar navbar-expand-lg">
+          <div className="container-fluid py-2">
+            <Link className="navbar-brand" href="/">
+                <h4 id="nav-button" className="text-light">Portafolio</h4>
+            </Link>
+            <Link className="nav-link" href="/github">
+                <h4 id="nav-button" className="text-light">GitHub</h4>
+            </Link>
+          </div>
+        </nav>
+
+        <style jsx>
+        {`
+            #nav-button{
+              cursor: pointer;
+            }
+        `}
+        </style>
+
         </>
     )
 };

@@ -1,50 +1,40 @@
 export const Skills = [
     {
         s: 'JavaScript',
-        p: '80%'
+        img: '/tecs/js.png'
     },
     {
         s: 'Express',
-        p: '80%'
+        img: '/tecs/exjs.png'
     },
 
     {
         s: 'NodeJS',
-        p: '60%'
+        img: '/tecs/nodejs.png'
     },
 
     {
         s: 'MongoDB',
-        p: '80%'
+        img: '/tecs/mdb.png'
     },
 
     {
         s: 'NextJS',
-        p: '75%'
+        img: '/tecs/next.png'
     },
 
     {
         s: 'React',
-        p: '65%'
+        img: '/tecs/react.png'
     },
 
     {
-        s: 'HTML',
-        p: '80%'
+        s: 'HTML y CSS',
+        img: '/tecs/htcs.png'
     },
 
     {
-        s: 'CSS',
-        p: '70%'
+        s: 'Tailwind',
+        img: '/tecs/tcss.png'
     },
-
-    {
-        s: 'Bootstrap',
-        p: '55%'
-    },
-
-    {
-        s: 'UI/UX',
-        p: '60%'
-    }
 ]

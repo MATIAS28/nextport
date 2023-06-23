@@ -1,18 +1,56 @@
 import { useState } from "react"
 
 export const  Carousel = ({imgs}) => {
-  const [img, setImg] = useState(1)
+  const [img, setImg] = useState(0)
+  
+  const nextImg = () => {
+    const newIndex = (img + 1) % imgs.length;
+    setImg(newIndex)
+  }
+
+  const prevImg = () => {
+    const newIndex = (img - 1 + imgs.length) % imgs.length;
+    setImg(newIndex);
+  }
 
     return(
-        <div>
-          <img className="d-block w-100 rounded-top pb-2" src={imgs[img-1]} alt=""/>
-          <div className="d-flex justify-content-center p-4 border-bottom">
-            <div style={{height: '3rem'}} className="d-flex align-items-center bg-dark rounded shadow-sm">
-              <h4 className="m-0 p-2 text-danger font-weight-bold" style={{cursor: 'pointer'}} onClick={() => setImg(img-1 < 1 ? 1 : img-1)}>{'<'}</h4>
-              <h6 style={{height: 'inherit', alignItems: 'center'}} className="d-flex m-0 p-2 text-warning">{img+'/'+imgs.length}</h6>
-              <h4 className="m-0 p-2 text-danger font-weight-bold" style={{cursor: 'pointer'}} onClick={() => setImg(img+1 > imgs.length ? 1 : img+1)}>{'>'}</h4>
+        <div className="d-block">
+          <div>
+          <img className="w-100 rounded my-2" src={imgs[img]} alt=""/>
+          </div>
+          <div className="d-flex justify-content-center my-2">
+            <div style={{borderRadius: '9999px', border: 'none'}} className="d-flex justify-content-around align-items-center">
+              <button id="button" className="btn bg-primary w-100 text-light font-weight-bold" onClick={prevImg}>{'<'}</button>
+              <h6 className="d-flex mx-2 w-100 text-muted">{(img+1)+'/'+imgs.length}</h6>
+              <button id="button" className="btn bg-primary w-100 text-light font-weight-bold" onClick={nextImg}>{'>'}</button>
             </div>
           </div>
+
+          <style jsx>
+          {`
+            @keyframes bounce {
+              0% {
+              transform: scale(1);
+              }
+              50% {
+              transform: scale(1.2);
+              }
+              100% {
+              transform: scale(1);
+              }
+            }
+
+            #button{
+              transition-property: all;
+              transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+              transition-duration: 150ms;
+            }
+
+            #button:active {
+            animation: bounce 0.3s;
+            }
+          `}
+          </style>
         </div>
     )
 } 

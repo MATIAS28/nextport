@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'lolo';
+    src: url('/fonts/vare.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  body {
+    font-family: 'lolo', sans-serif;
+  }
+
+.bg-primary{
+    background-color: #000036 !important;
+}
+
+.text-primary{
+    color:  #000036 !important;
+}

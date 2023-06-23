@@ -8,15 +8,15 @@ const GitHub = ({user, repos, status_repo, status_user}) => {
 
     return(
         <>
-        <div className="row">
+        <div className="row bg-light p-4">
             <section className="col-md-4">
-                <article className="card bg-dark">
+                <article className="card border-0 rounded shadow bg-dark">
                     <img src={user.avatar_url} alt="" />
                     <h1 className="text-center text-light"> {user.login} </h1>
                 </article>
             </section>
 
-            <section className="col-md-8">
+            <section className="col">
                 {
                     repos.map((repo, i) => {
                         return(
@@ -36,7 +36,12 @@ const GitHub = ({user, repos, status_repo, status_user}) => {
         <style jsx>
         {`
         @media(max-width: 990px){
-            .card{
+            .row{
+                margin: 0px;
+                margin-top: 1rem;
+            }
+            
+            .w-75{
                 width: 100% !important;
             }
         }

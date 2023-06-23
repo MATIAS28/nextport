@@ -1,34 +1,50 @@
 import Link from 'next/link'
 import { Carousel } from './carousel'
+
 export const AppsComponent = (props) => {
     return(
     <>
-    <div className="card">
-        <Carousel imgs={props?.imgs}/>
-    <div className="card-body">
-        
-        <h5 className="card-title">{props.name}</h5>
-        <p className="card-text text-secondary"> {props.d} </p>
-    </div>
-    <ul className="list-group list-group-flush">
-        <li className="list-group-item">Prácticas: {props.p} </li>
-        <li className="list-group-item">Tecnologías: {props.t} </li>
-    </ul>
-    <div className="card-body">
+    <div id='project-card' className="p-2 d-inline-flex align-items-center row p-3">
+
+     <div className='col-6'>
+     <Carousel imgs={props?.imgs}/>
+     </div>
+
+    <div className="col-6">
+        <h4 className="">{props.name}</h4>
+        <p className=""> {props.d} </p>
+
+        <div>
+            <h5>Prácticas:</h5>
+            <p>{props.p}</p>
+        </div>
+        <div>
+            <h5>Tecnologías:</h5>
+            <p>{props.t}</p>
+        </div>
+         
+
+        <div className="d-flex align-items-center">
         <Link href={props.u}><a target='_blank' className="btn btn-outline-dark">Página</a></Link>
-        {props.g !== '' && <Link href={props.g}><a target='_blank' className=""><img src="/img/git.png" alt=""/></a></Link>}
-        
+        {props.g !== '' && <Link href={props.g}><a target='_blank' className="mx-2"><img src="/img/git.png" alt=""/></a></Link>}
+        </div>
+
+        <div className='d-flex justify-content-end my-2'>
+        <span className='bg-warning text-light px-2 py-1'>{props.s === 'No ha sido desplegada' ? 'No ha sido desplegada' : 'Desplegado en'+' '+props.s} </span>
+        </div>
     </div>
-    <span className='bg-primary text-light'>{props.s === 'No ha sido desplegada' ? 'No ha sido desplegada' : 'Desplegado en'+' '+props.s} </span>
+
+   
     </div>
 
     <style jsx>
     {`
-        .card{
-            margin-right: 1rem;
-            margin-bottom: 1rem;
+        #project-card{
+            border-radius: 0.375rem;
+            background-color: white;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
         }
-        
+
         a{
             margin-right: 0.1rem 
         }
@@ -45,14 +61,18 @@ export const AppsComponent = (props) => {
         }
 
         span{
-            display: flex;
-            justify-content: center;
-            font-size: x-small;
-            font-weight: 500;
+            border-radius: 0.75rem;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
         }
 
         @media (max-width: 990px){
-            .card{
+            .d-inline-flex{
+                display: block !important;
+            }
+            
+            .col-6{
                 width: 100%;
             }
         }
