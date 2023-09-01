@@ -10,7 +10,7 @@ export const About = () => {
         <div className="col-md-8">
             <div className="card-body">
                 <h1 className=" text-light">Matias Muñoz</h1>
-                <h5 className="display-5 text-danger">Desarrollador FullStack</h5>
+                <h5 className="display-4 text-danger">Desarrollador Web</h5>
                 <p className="text-light font-weight-bold">
                     ¡Hola! Soy desarrollador web <span className="text-warning">FullStack, </span>
                     llevo casi 4 años desarrollando aplicaciones. Destaco por ser apasionado y creativo, así como por mi capacidad para enfrentar grandes retos
