@@ -10,11 +10,9 @@ function ProjectsComponent(){
 
     useEffect(() => {
         const getProjects = async () => {
-            
             try {
-                const projects = await axios.get('http://localhost:3000/api/apps')
+                const projects = await axios.get(process.env.NEXT_PUBLIC_SERVER_URL)
                 setApps(projects.data)
-                console.log(projects);
             } catch (e) {
                 console.log(e);
             }
