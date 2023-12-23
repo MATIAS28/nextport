@@ -13,7 +13,7 @@ export const IntroductionComponent = () => {
                 <div className="text-2xl md:text-7xl duration-150">
                     <h1 className="text-white font-semibold">Hola, soy</h1>
                     <h2 className="secondary font-semibold titleName w-full">Matias Muñoz</h2>
-                    <h3 className="text-white lg:text-5xl font-semibold">Desarrollador Web</h3>
+                    <h3 className="text-white text-xl md:text-5xl font-semibold">Desarrollador Web</h3>
                 </div>
 
                 <div className="flex items-center space-x-4 md:space-x-7 mt-5">
