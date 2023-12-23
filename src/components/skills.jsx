@@ -50,7 +50,7 @@ export const SkillsComponent = () => {
 
                 <div className="flex justify-end">
                     <p className="text-end text-gray-200 font-base text-xs md:text-xl mt-3 w-full leading-relaxed">
-                    He adquirido competencias en estas tecnologías de forma autodidacta, 
+                    He adquirido habilidades en estas tecnologías de forma autodidacta, 
                     como mencioné en la sección 'Sobre mí', a través de prácticas con ideas propias, cursos en Udemy y tutoriales en YouTube. 
                     Poseo conocimientos sólidos en JavaScript y en todo el stack MERN. 
                     La práctica constante con estas tecnologías a lo largo de los últimos 4 años me ha capacitado 
