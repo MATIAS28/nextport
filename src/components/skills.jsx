@@ -3,9 +3,9 @@
 
 export const SkillsComponent = () => {
     return(
-        <div className="flex justify-between items-center w-full">
-            <div className="flex justify-center items-center p-2">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-2 my-3 space-x-4 space-y-4 w-full">
+        <div className="md:flex justify-between items-center w-full">
+            <div className="md:flex justify-center items-center p-2">
+                <div className="hidden md:grid grid-cols-2 md:grid-cols-4 gap-2 my-3 space-x-4 space-y-4 w-full">
 
                     <div className="flex justify-center items-center">
                         <img src="/skills/mongo.png" className="w-9 md:w-20" alt="" />
@@ -40,12 +40,11 @@ export const SkillsComponent = () => {
                 </div>
             </div>
 
-            <div className="mb-4 w-3/5">
+            <div className="mb-4 w-full md:w-3/5">
                 <h2 className="sm:text-lg md:text-3xl text-white font-semibold text-end">Habilidades</h2>
                 
                 <div className="flex justify-end items-center">
-                <div className="secondaryBack w-12 md:w-28 h-1 rounded-3xl"></div>
-                <div className="secondaryBack w-3 md:w-9 h-1 rounded-3xl mx-2"></div>
+                <div className="secondaryBack w-20 md:w-28 h-1 rounded-3xl"></div>
                 </div>
 
                 <div className="flex justify-end">
@@ -57,6 +56,41 @@ export const SkillsComponent = () => {
                     para emprender cualquier proyecto que imagine de manera independiente.
                     </p>
                 </div>
+
+                <div className="grid md:hidden grid-cols-4 gap-2 my-3 space-x-4 space-y-4 w-full">
+
+                    <div className="flex justify-center items-center">
+                        <img src="/skills/mongo.png" className="w-9 md:w-20" alt="" />
+                    </div>
+                    
+                    <div className="flex justify-center items-center">
+                        <img src="/skills/exjs.png" className="w-9 md:w-20" alt="" />
+                    </div>
+
+                    <div className="flex justify-center items-center">
+                        <img src="/skills/react.png" className="w-9 md:w-20" alt="" />
+                    </div>
+
+                    <div className="flex justify-center items-center">
+                        <img src="/skills/node.png" className="w-9 md:w-16" alt="" />
+                    </div>
+
+                    <div className="flex justify-center items-center">
+                        <img src="/skills/next.png" className="w-9 md:w-20" alt="" />
+                    </div>
+
+                    <div className="flex justify-center items-center">
+                        <img src="/skills/tcss.png" className="w-9 md:w-20" alt="" />
+                    </div>
+
+                    <div className="flex justify-center items-center">
+                        <img src="/skills/html.png" className="w-9 md:w-20" alt="" />
+                    </div>
+                    <div className="flex justify-center items-center">
+                        <img src="/skills/css.png" className="w-9 md:w-20" alt="" />
+                    </div>
+                </div>
+
             </div>
         </div>
     )

@@ -4,16 +4,16 @@
 export const IntroductionComponent = () => {
     return(
         <div className="flex items-center justify-between md:justify-center w-full mt-5">
-            <div className="md:flex justify-center md:p-2 w-full mb-4 md:mb-0 mr-2">
-                <img src="/profile-pic.png" className="w-full md:w-4/5 h-56 md:h-1/3 rounded-full"
+            <div className="md:flex justify-center md:p-2 w-full mb-4 md:mb-0 md:mr-2">
+                <img src="/fdp.png" className="w-full md:w-4/5 md:h-1/3 rounded-full"
                 alt="Matias Muñoz Desarrollador Cool"/>
             </div>
 
             <div className="md:p-1 w-full">
-                <div className="text-2xl md:text-7xl duration-150">
-                    <h1 className="text-white font-semibold">Hola, soy</h1>
-                    <h2 className="secondary font-semibold titleName w-full">Matias Muñoz</h2>
-                    <h3 className="text-white text-xl md:text-5xl font-semibold">Desarrollador Web</h3>
+                <div className="">
+                    <h1 className="text-white text-2xl md:text-7xl font-semibold">Hola, soy</h1>
+                    <h2 className="titleName secondary text-2xl md:text-7xl font-semibold my-0">Matias Muñoz</h2>
+                    <h3 className="text-white text-lg md:text-5xl font-semibold">Desarrollador Web</h3>
                 </div>
 
                 <div className="flex items-center space-x-4 md:space-x-7 mt-5">

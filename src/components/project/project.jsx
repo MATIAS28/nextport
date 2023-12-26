@@ -11,7 +11,7 @@ export const ProjectComponent = ({app}) => {
 
                 <div className='w-full mm:w-2/4 mm:flex justify-center h-72'>
                     {showTecs ? 
-                        <div className='w-full mm:w-[30rem] h-full mm:h-64 bg-gray-100 drop-shadow-lg p-3 rounded-lg tecsAnimation'>
+                        <div className='tecsAnimation w-full mm:w-[30rem] h-full mm:h-64 bg-gray-100 p-3 rounded-lg'>
                             <div className=''>
                                 <h5 className='text-xl text-black font-semibold'>Stack:</h5>
                                 <p className='text-lg font-medium'>{tec}</p>
