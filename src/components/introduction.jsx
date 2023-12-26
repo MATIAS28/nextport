@@ -11,7 +11,7 @@ export const IntroductionComponent = () => {
 
             <div className="md:p-1 w-full">
                 <div className="">
-                    <h1 className="text-white text-2xl md:text-7xl font-semibold">Hola, soy</h1>
+                    <h1 className="text-white text-xl md:text-7xl font-semibold">Hola, soy</h1>
                     <h2 className="titleName secondary text-xl md:text-7xl font-semibold my-0">Matias Muñoz</h2>
                     <h3 className="text-white text-lg md:text-5xl font-semibold">Desarrollador Web</h3>
                 </div>
