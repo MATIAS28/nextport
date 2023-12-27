@@ -10,6 +10,7 @@
 body{
   font-family: 'FontPrimary', sans-serif;
   background-color: #0E0451;
+  transition: all 300ms ease;
 }
 
 svg{

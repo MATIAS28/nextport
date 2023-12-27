@@ -1,6 +1,14 @@
-
+'use client'
 
 export const NavbarComponent = () => {
+
+    const scrollHandler = (id) => {
+        if (typeof window !== "undefined") {
+        const section = document.getElementById(id)
+        section.scrollIntoView(true)
+        }
+    }
+
     return(
         <div className="flex justify-between items-center p-3">
             <div className="flex items-center">
@@ -9,11 +17,11 @@ export const NavbarComponent = () => {
             </div>
 
             <div className="flex items-center mx-0 md:mx-2 space-x-3">
-                <a href="#" className="text-xs md:text-xl text-white font-medium">Sobre mi</a>
-                <a href="#" className="text-xs md:text-xl text-white font-medium">Proyectos</a>
+                <button onClick={() => scrollHandler('about')}  className="text-xs md:text-xl text-white font-medium">Sobre mi</button>
+                <button onClick={() => scrollHandler('projects')}  className="text-xs md:text-xl text-white font-medium">Proyectos</button>
 
                 <a href="/Matias Muñoz.pdf" download='/Matias Muñoz.pdf' 
-                className="button btn-hover font-semibold text-xs md:text-lg">
+                className="button btn-hover font-semibold text-xs mm:text-lg">
                     Descargar CV
                 </a>
             </div>

@@ -17,7 +17,7 @@ export const AboutComponent = () => {
     }, [])
 
     return(
-        <div className="md:flex items-center justify-between">
+        <div id="about" className="md:flex items-center justify-between">
             <div className="w-full md:w-3/5">
                 <div className="w-full">
 

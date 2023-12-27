@@ -23,7 +23,7 @@ function ProjectsComponent(){
     }, [])
     
     return(
-        <div className="h-full">
+        <div id="projects" className="h-full">
             <div className="flex justify-center">
                 <div>
                     <h2 className="sm:text-lg md:text-3xl text-white font-semibold">Mis Proyectos</h2>
@@ -34,7 +34,7 @@ function ProjectsComponent(){
                 </div>
             </div>
 
-            <div className="flex justify-center items-center p-3 md:mt-20 w-full h-full">
+            <div className="flex justify-center items-center p-3 mt-14 md:mt-20 w-full h-full">
                 <div className="flex-col space-y-48 w-full h-full">
                     
                     {   Apps ?
