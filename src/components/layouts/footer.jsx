@@ -1,7 +1,24 @@
-
-
+'use client'
+import toast, {Toaster} from 'react-hot-toast'
 
 export const FooterComponent = () => {
+
+    const copyHandler = async (name, text) => {
+        try {
+            await navigator.clipboard.writeText(text);
+            toast(name+' copiado', {
+                icon: '✎', 
+                style: {
+                borderRadius: '0.3rem',
+                background: '#FFD700',
+                color: '#000',
+              }
+            })
+        } catch (e) {
+            toast.error("Error al copiar el "+name)
+        }
+    }
+
     return(
         <footer className="bg-black relative mt-16">
             
@@ -15,21 +32,22 @@ export const FooterComponent = () => {
                 <h4 className="secondary font-base text-lg mm:text-3xl">Mis Redes</h4>
                 <div className="flex items-center space-x-4 my-4">
 
-                    <button>
-                    <img src="/phone.png" className="w-4 md:w-6 mr-2 duration-100 cursor-pointer hover:scale-105"/>
+                    <button className='duration-75 hover:scale-105 button' onClick={() => copyHandler('Número de teléfono', '2645875117')}>
+                    <img src="/phone.png" className="socialNetworks4 w-4 sm:w-6 mm:w-9 mr-2 duration-100 cursor-pointer"/>
                     </button>
 
-                    <button>
-                    <img src="/gmail.png" className="w-4 md:w-6 mr-2 duration-100 cursor-pointer hover:scale-105"/>
+                    <button className='duration-75 hover:scale-105 button' onClick={() => copyHandler('Gmail', 'matiasmunoz.dev@gmail.com')}>
+                    <img src="/gmail.png" className="socialNetworks3 w-4 sm:w-6 mm:w-9 mr-2 duration-100 cursor-pointer"/>
                     </button>
 
-                    <a target="_blanck" href="https://www.linkedin.com/in/matias-mu%C3%B1oz-00a7581b6/" role="button" >
-                        <img src="/linkedin.png" className="w-4 md:w-6 mr-2 duration-100 cursor-pointer hover:scale-105"/>
+                    <a className='duration-75 hover:scale-105 button' target="_blanck" href="https://www.linkedin.com/in/matias-mu%C3%B1oz-00a7581b6/" role="button" >
+                        <img src="/linkedin.png" className="socialNetworks2 w-4 sm:w-6 mm:w-9 mr-2 duration-100 cursor-pointer"/>
                     </a>
 
-                    <a target="_blanck" href="https://github.com/MATIAS28" role="button" >
-                        <img src="/github.png" className="w-6 md:w-6 mr-2 cursor-pointer hover:scale-105 hover:scale-105"/>
+                    <a className='duration-75 hover:scale-105 button' target="_blanck" href="https://github.com/MATIAS28" role="button" >
+                        <img src="/github.png" className="socialNetworks1 w-4 sm:w-6 mm:w-9 mr-2 cursor-pointer"/>
                     </a>
+
 
                     </div>
                 </div>
