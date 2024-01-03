@@ -21,7 +21,7 @@ export const NavbarComponent = () => {
                 <button onClick={() => scrollHandler('projects')}  className="text-xs md:text-xl text-white font-medium">Proyectos</button>
 
                 <a href="/Matias Muñoz.pdf" download='/Matias Muñoz.pdf' 
-                className="button btn-hover font-semibold text-xs mm:text-lg">
+                className="button btn-hover font-semibold text-xs mm:text-base">
                     Descargar CV
                 </a>
             </div>
