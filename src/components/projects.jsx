@@ -23,8 +23,8 @@ function ProjectsComponent(){
     }, [])
     
     return(
-        <div id="projects" className="h-full">
-            <div className="flex justify-center">
+        <div id="projects" className="h-full my-20 md:my-32 p-2">
+            <div className="flex justify-center mt-20">
                 <div>
                     <h2 className="sm:text-lg md:text-3xl text-white font-semibold">Mis Proyectos</h2>
                     <div className="flex items-center">
@@ -34,10 +34,9 @@ function ProjectsComponent(){
                 </div>
             </div>
 
-            <div className="flex justify-center items-center p-3 mt-14 md:mt-20 w-full h-full">
-                <div className="flex-col space-y-48 w-full h-full">
-                    
-                    {   Apps ?
+            <div className="flex justify-center items-center p-3 mt-14 md:mt-20 w-full min-h-screen">
+                <div className="flex-col space-y-52 w-full h-full">
+                    {Apps ?
                      Apps.map((app, i) => {
                         return(
                             <ProjectComponent app={app} key={i}/>
@@ -49,7 +48,6 @@ function ProjectsComponent(){
                     <Loader/>
 
                     }
-
                 </div>
 
                 

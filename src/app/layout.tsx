@@ -20,13 +20,12 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"/>
       <script type="module" src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/bouncy.js"></script>
       </head>
       <body className={inter.className}>
         <NavbarComponent/>
-        <div className='relative md:flex w-full h-full'>
           {children}
-        </div>
         <FooterComponent/>
       </body>
     </html>

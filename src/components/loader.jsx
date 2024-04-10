@@ -8,7 +8,7 @@ export const Loader = () => {
                 <l-bouncy
                 size="100"
                 speed="1.75"
-                color="#00D8FF" 
+                color="#ffff" 
                 />
             </div>
         </div>

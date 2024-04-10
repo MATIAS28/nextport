@@ -21,14 +21,14 @@ export const CarouselComponent = ({Imgs}) => {
                 
                 <button onClick={() => setImgSelector(prev => (prev-1+imgs.length) % imgs.length)} 
                 className='w-32 hidden xl:block button'>
-                    <ChevronLeftIcon className='tertiary w-full'/>
+                    <ChevronLeftIcon className='fill-white w-full'/>
                 </button>
 
-                <img src={img} className="w-full mm:w-[30rem] h-64 mm:h-72 rounded" alt=""/>
+                <img src={img} className="w-full mm:w-[30rem] h-64 mm:h-72 rounded border" alt=""/>
                 
                 <button onClick={() => setImgSelector(prev => (prev + 1) % imgs.length)} 
                 className='w-32 hidden xl:block button'>
-                    <ChevronRightIcon className='tertiary w-full'/>
+                    <ChevronRightIcon className='fill-white w-full'/>
                 </button>
 
             </div>
@@ -39,19 +39,19 @@ export const CarouselComponent = ({Imgs}) => {
                         return(
                             <div onClick={() => setImgSelector(i)} key={i} 
                             className={i === imgSelector ? 
-                            'duration-150 ease-linear w-7 md:w-9 h-2 tertiaryBack rounded-2xl cursor-pointer hover:scale-105 m-2' : 
+                            'duration-150 ease-linear w-7 md:w-9 h-2 secondaryBack rounded-2xl cursor-pointer hover:scale-105 m-2' : 
                             'duration-150 ease-linear w-5 md:w-7 h-1 bg-white rounded-2xl cursor-pointer hover:scale-105 m-2'}>
                             </div>
                         )
                     })}
                 </div>
 
-                <div className='flex justify-center w-full h-5 block xl:hidden my-5'>
+                <div className='flex justify-center w-full h-5 block xl:hidden my-7'>
                     <div className='flex justify-center items-center w-full md:w-full mm:w-3/5 space-x-3'>
                         
                         <button onClick={() => setImgSelector(prev => (prev-1+imgs.length) % imgs.length)} 
-                        className='flex justify-center items-center w-1/4 md:w-28 bg-black rounded-lg py-2'>
-                            <ChevronLeftIcon className='w-full h-4'/>
+                        className='flex justify-center items-center bg-white md:w-28 rounded-full'>
+                            <ChevronLeftIcon className='w-9 h-9 fill-black p-2'/>
                         </button>
 
                         <span className='text-lg font-semibold text-white w-32 text-center'>
@@ -59,8 +59,8 @@ export const CarouselComponent = ({Imgs}) => {
                         </span>
 
                         <button onClick={() => setImgSelector(prev => (prev + 1) % imgs.length)} 
-                        className='flex justify-center items-center w-1/4 md:w-28 bg-black rounded-lg py-2 button'>
-                            <ChevronRightIcon className='w-full h-4'/>
+                        className='flex justify-center items-center bg-white md:w-28 rounded-full'>
+                            <ChevronRightIcon className='w-9 h-9 fill-black p-2'/>
                         </button>
                     </div>
                 </div>

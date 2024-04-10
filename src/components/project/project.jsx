@@ -1,15 +1,28 @@
 import { CarouselComponent } from '@/components/project/carousel'
 import { useState } from 'react'
+import { ExclamationCircleIcon } from "@heroicons/react/24/solid"
 
 
 export const ProjectComponent = ({app}) => {
     const [ showTecs, setShowTecs ] = useState(false)
     const { name, practices, tec, server, url, git, desc, imgs } = app
+    const isRender = server.toLowerCase().includes('render')
 
     return(
-        <div className="block mm:flex justify-between items-center mm:space-x-5 h-full mm:h-80 ">
+        <div className="block mm:flex justify-between items-center mm:space-x-5 h-full md:h-80 ">
+                
+            <div className='w-full md:w-2/4 h-full md:h-72 mb-4'>
 
-                <div className='w-full mm:w-2/4 mm:flex justify-center h-72'>
+                {isRender &&
+                    <div className='flex justify-center items-center mb-4'>
+                        <div className='flex items-center'>
+                            <ExclamationCircleIcon className='w-5 mr-2 fill-gray-200'/>
+                            <span className='text-xs md:text-sm text-gray-200 font-light w-full'>¡Advertencia! Render puede tardar en encender el servidor.</span>
+                        </div>
+                    </div>
+                }
+
+                <div className='w-full flex justify-center'>
                     {showTecs ? 
                         <div className='tecsAnimation w-full mm:w-[30rem] h-full mm:h-64 bg-gray-100 p-3 rounded-lg'>
                             <div className=''>
@@ -21,8 +34,9 @@ export const ProjectComponent = ({app}) => {
                         <CarouselComponent Imgs={imgs} server={server}/>
                     }
                 </div>
+            </div>
 
-            <div className="w-full mm:w-2/4 h-full mm:h-72 my-12">
+            <div className="w-full mm:w-2/4 h-full mm:h-72">
 
                 <div>
                     <div className='flex justify-between items-center'>
@@ -32,14 +46,14 @@ export const ProjectComponent = ({app}) => {
                         </span>
                     </div>
 
-                    <p className="text-gray-200 font-base text-sm md:text-base w-full leading-relaxed">
+                    <p className="text-gray-200 font-light text-sm/2 md:text-base w-full">
                         {desc}
                     </p>
                 </div>
 
                 <div className='my-4'>
                     <h4 className="text-xl font-semibold text-white">Practicas</h4>
-                    <p className="text-gray-200 font-base text-sm md:text-base w-full leading-loose py-1">
+                    <p className="text-gray-200 font-base text-sm w-full py-1">
                         {practices}
                     </p>
                 </div>
@@ -47,17 +61,19 @@ export const ProjectComponent = ({app}) => {
                 <div className="flex items-center my-4 space-x-3 duration-150">
 
                     <button onClick={() => setShowTecs(prev => !prev)}
-                    className='px-5 md:px-9 py-2 bg-black text-white text-sm md:text-lg rounded font-semibold btn-1 duration-100 button btn-1'>
+                    className='px-5 md:px-9 py-2 bg-white text-sm rounded font-semibold'>
                         {showTecs ? 'Mostrar vistas previas'  : 'Mostrar Stack'}
                     </button>
 
-                    <a target='_blank' href={url} 
-                    className="px-5 md:px-9 py-2 bg-black text-white text-sm md:text-lg rounded font-semibold btn-1 duration-100 button btn-1">
-                        Visitar
-                    </a>
+                    {url.length > 0 &&
+                        <a target='_blank' href={url} 
+                        className="px-5 md:px-9 py-2 bg-white text-sm rounded font-semibold">
+                            Visitar
+                        </a>
+                    }
 
                     <a target='_blank' href={git}>
-                        <img src="/github.png" className="w-9" />
+                        <img src="/github.png" className="w-7" />
                     </a>
                 </div>
             </div>

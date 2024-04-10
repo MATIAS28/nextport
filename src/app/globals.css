@@ -8,8 +8,8 @@
 }
 
 body{
-  font-family: 'FontPrimary', sans-serif;
-  background-color: #0E0451;
+  font-family: 'Roboto', sans-serif;
+  background-color: #000;
   transition: all 300ms ease;
 }
 
@@ -18,25 +18,33 @@ svg{
 }
 
 .primary{
-  color: #0E0451;
+  color: #0000;
 }
 
 .primaryBack{
-  background-color: #0E0451;
+  background-color: #0000;
 }
 
 .secondary{
-  color: #00D8FF;
+  color: #FA041F;
 }
 
 .secondaryBack{
-  background-color: #00D8FF;
+  background-color: #FA041F;
 }
 
 .tertiaryBack{
-  background-color: #FFD700;
+  background-color: #07110E;
 }
 
 .tertiary{
-  color: #FFD700;
+  color: #07110E;
+}
+
+
+#logo{
+  mask-image: linear-gradient(
+    black 80%,
+    transparent
+  );
 }
