@@ -9,7 +9,7 @@ export const FooterComponent = () => {
             <img src="/logo.png" className="w-16 md:w-28" alt="" />
             </div>
 
-            <p className="relative font-light text-white text-center bottom-0 w-full text-xs/[2px] md:text-lg">
+            <p className="relative font-light text-white text-center bottom-0 w-full text-xs md:text-lg">
                 ©2024 Copyright: Matias Muñoz
             </p>
 

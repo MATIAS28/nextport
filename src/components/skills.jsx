@@ -11,14 +11,14 @@ export const SkillsComponent = () => {
         <div id='skills' className="md:flex justify-center items-center w-full tertiaryBack h-full py-20">
 
                 <div className="mt-20 mb-4 w-full md:w-3/5">
-                <h2 className="sm:text-lg md:text-3xl text-white font-semibold text-center">Habilidades</h2>
+                <h2 className="sm:text-xl md:text-3xl text-white font-semibold text-center">Habilidades</h2>
                 
                 <div className="flex justify-center items-center">
                 <div className="secondaryBack w-20 md:w-36 h-1 rounded-3xl"></div>
                 </div>
 
                 <div className="flex justify-center my-7">
-                    <p className="text-gray-200 font-light text-sm md:text-xl mt-3 w-3/4 md:w-full text-center">
+                    <p className="text-gray-200 font-light text-xs md:text-xl mt-3 w-4/5 md:w-3/4 text-center">
                     He adquirido habilidades en estas tecnologías de forma autodidacta, 
                     como mencioné en la sección 'Sobre mí', a través de prácticas con ideas propias, cursos en Udemy y tutoriales en YouTube. 
                     Poseo conocimientos sólidos en JavaScript y en todo el stack MERN. 

@@ -26,7 +26,7 @@ function ProjectsComponent(){
         <div id="projects" className="h-full my-20 md:my-32 p-2">
             <div className="flex justify-center mt-20">
                 <div>
-                    <h2 className="sm:text-lg md:text-3xl text-white font-semibold">Mis Proyectos</h2>
+                    <h2 className="sm:text-xl md:text-3xl text-white font-semibold">Mis Proyectos</h2>
                     <div className="flex items-center">
                     <div className="secondaryBack w-7 md:w-12 h-1 rounded-3xl"></div>
                     <div className="secondaryBack w-20 md:w-36 h-1 rounded-3xl mx-2"></div>

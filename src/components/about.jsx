@@ -22,7 +22,7 @@ export const AboutComponent = () => {
         <div>
             <div className="flex justify-center">
                 <div className="mt-20 mb-4">
-                    <h2 className="sm:text-lg md:text-3xl text-white font-semibold">Sobre Mí</h2>
+                    <h2 className="sm:text-xl md:text-3xl text-white font-semibold">Sobre Mí</h2>
                     <div className="flex items-center">
                     <div className="secondaryBack w-12 md:w-20 h-1 rounded-3xl mr-2"></div>
                     <div className="secondaryBack w-4 md:w-6 h-1 rounded-3xl"></div>
@@ -31,7 +31,7 @@ export const AboutComponent = () => {
             </div>
 
             <div className="flex justify-center my-7">
-                <p className="text-gray-200 font-light text-sm md:text-xl mt-3 w-3/4 text-center">
+                <p className="text-gray-200 font-light text-xs md:text-xl mt-3 w-4/5 md:w-3/4 text-center">
                 ¡Hola! mi nombre es Matias, soy desarrollador <b className="font-bold">FullStack</b>. Mi fascinación por 
                 el mundo de la programación me ha impulsado a adquirir habilidades de manera autodidacta. 
                 Mi viaje comenzó en 2018 con "Eloquent <b className="font-bold">JavaScript</b>", un libro que me proporcionó una sólida 
