@@ -3,7 +3,7 @@ import { WrenchScrewdriver } from '@heroicons/react/solid'
 
 export const SkillsComponent = () => {
     const frontEnd = ['HTML', 'CSS', 'Tailwind', 'JavaScript', 'React & Next JS']
-    const backEnd = ['Node JS', 'Express', 'MongoDB', 'Tailwind', 'JavaScript']
+    const backEnd = ['Node JS', 'Express', 'MongoDB', 'Tailwind']
     const tools = ['Git', 'VScode', 'Figma', 'Canva']
 
 
