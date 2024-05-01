@@ -6,7 +6,7 @@ import toast, {Toaster} from 'react-hot-toast'
 export const IntroductionComponent = () => {
 
     return(
-        <div className="flex items-center justify-around w-full h-72 md:h-[30rem] mb-12">
+        <div className="flex items-center justify-around w-full h-72 md:h-[30rem]">
 
             <Toaster position="bottom-center"/>
 

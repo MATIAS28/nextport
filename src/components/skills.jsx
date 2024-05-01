@@ -8,17 +8,13 @@ export const SkillsComponent = () => {
 
 
     return(
-        <div id='skills' className="md:flex justify-center items-center w-full tertiaryBack h-full py-20">
+        <div id='skills' className="md:flex items-center w-full h-full py-20">
 
-                <div className="mt-20 mb-4 w-full md:w-3/5">
-                <h2 className="sm:text-xl md:text-3xl text-white font-semibold text-center">Habilidades</h2>
-                
-                <div className="flex justify-center items-center">
-                <div className="secondaryBack w-20 md:w-36 h-1 rounded-3xl"></div>
-                </div>
+                <div className="mt-20 mb-4 w-full">
+                <h2 className="sm:text-xl md:text-3xl text-white font-semibold">+ Habilidades</h2>
 
-                <div className="flex justify-center my-7">
-                    <p className="text-gray-200 font-light text-xs md:text-xl mt-3 w-4/5 md:w-3/4 text-center">
+                <div className="my-7">
+                    <p className="text-gray-200 font-light text-xs md:text-base mt-3 w-full">
                     He adquirido habilidades en estas tecnologías de forma autodidacta, 
                     como mencioné en la sección 'Sobre mí', a través de prácticas con ideas propias, cursos en Udemy y tutoriales en YouTube. 
                     Poseo conocimientos sólidos en JavaScript y en todo el stack MERN. 
@@ -48,7 +44,7 @@ export const SkillsComponent = () => {
                     </div>
 
                     <div className='flex justify-center items-start p-5 md:p-7 h-64 md:h-80'>
-                        <div className='grid grid-cols-1 justify-items-center'>
+                        <div className='grid grid-cols-1'>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-9 md:w-16 h-9 md:h-16">
                             <path fillRule="evenodd" d="M2.25 6a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H5.25a3 3 0 0 1-3-3V6Zm3.97.97a.75.75 0 0 1 1.06 0l2.25 2.25a.75.75 0 0 1 0 1.06l-2.25 2.25a.75.75 0 0 1-1.06-1.06l1.72-1.72-1.72-1.72a.75.75 0 0 1 0-1.06Zm4.28 4.28a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z" clipRule="evenodd" />
                             </svg>

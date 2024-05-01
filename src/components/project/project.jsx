@@ -24,8 +24,8 @@ export const ProjectComponent = ({app}) => {
 
                 <div className='w-full flex justify-center'>
                     {showTecs ? 
-                        <div className='tecsAnimation w-full mm:w-[30rem] h-full mm:h-64 bg-gray-100 p-3 rounded-lg'>
-                            <div className=''>
+                        <div className='tecsAnimation w-full h-80 md:h-64 bg-gray-100 rounded'>
+                            <div className='p-3'>
                                 <h5 className='text-xl text-black font-semibold'>Stack:</h5>
                                 <p className='text-lg font-medium'>{tec}</p>
                             </div>
@@ -34,19 +34,25 @@ export const ProjectComponent = ({app}) => {
                         <CarouselComponent Imgs={imgs} server={server}/>
                     }
                 </div>
+
+                <button onClick={() => setShowTecs(prev => !prev)}
+                    className='relative block md:hidden px-5 md:px-9 py-2 bg-white text-sm rounded font-semibold w-full my-7'>
+                        {showTecs ? 'Mostrar vistas previas'  : 'Mostrar Stack'}
+                </button>
+
             </div>
 
             <div className="w-full mm:w-2/4 h-full mm:h-72">
 
                 <div>
                     <div className='flex justify-between items-center'>
-                        <h3 className="text-2xl mm:text-3xl secondary font-semibold mb-3">{name}</h3>
-                        <span className='text-xs font-semibold px-3 py-1 text-white tertiaryBack uppercase rounded-3xl'>
+                        <h3 className="text-2xl mm:text-3xl secondary font-bold mb-3">{name}</h3>
+                        <span className='text-xs md:font-semibold px-3 py-1 text-white tertiaryBack uppercase rounded-3xl'>
                             {server && server} 
                         </span>
                     </div>
 
-                    <p className="text-gray-200 font-light text-sm/2 md:text-base w-full">
+                    <p className="text-gray-200 font-light text-sm w-full">
                         {desc}
                     </p>
                 </div>
@@ -61,7 +67,7 @@ export const ProjectComponent = ({app}) => {
                 <div className="flex items-center my-4 space-x-3 duration-150">
 
                     <button onClick={() => setShowTecs(prev => !prev)}
-                    className='px-5 md:px-9 py-2 bg-white text-sm rounded font-semibold'>
+                    className='hidden md:block px-5 md:px-9 py-2 bg-white text-sm rounded font-semibold'>
                         {showTecs ? 'Mostrar vistas previas'  : 'Mostrar Stack'}
                     </button>
 

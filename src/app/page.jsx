@@ -6,9 +6,8 @@ import { SkillsComponent } from '@/components/skills'
 
 export default function Home() {
   return (
-    <div>
+    <div className='w-[85%] md:w-4/5 mx-auto space-y-36'>
         <IntroductionComponent/>
-        <Technologies/>
         <AboutComponent/>
         <ProjectsComponent/>
         <SkillsComponent/>

@@ -41,6 +41,13 @@ svg{
   color: #07110E;
 }
 
+button{
+  transition: all 0.1s;
+}
+
+button:active{
+  transform: scale(0.95);
+}
 
 #logo{
   mask-image: linear-gradient(
