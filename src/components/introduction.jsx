@@ -21,7 +21,7 @@ export const IntroductionComponent = () => {
                 <SocialNetworks/>
 
                 <a href="/Matias Muñoz.pdf" download='/Matias Muñoz.pdf' 
-                className="flex md:hidden bg-white text-black text-xs/[2px] p-3 mt-4 w-fit rounded">
+                className="flex md:hidden bg-white text-black text-xs px-2 py-1 mt-4 w-fit rounded">
                         Descargar CV
                 </a>
 

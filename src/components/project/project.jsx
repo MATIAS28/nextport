@@ -46,7 +46,7 @@ export const ProjectComponent = ({app}) => {
 
                 <div>
                     <div className='flex justify-between items-center'>
-                        <h3 className="text-2xl mm:text-3xl secondary font-bold mb-3">{name}</h3>
+                        <h3 className="text-xl mm:text-3xl secondary font-bold mb-3">{name}</h3>
                         <span className='text-xs md:font-semibold px-3 py-1 text-white tertiaryBack uppercase rounded-3xl'>
                             {server && server} 
                         </span>
@@ -64,7 +64,7 @@ export const ProjectComponent = ({app}) => {
                     </p>
                 </div>
 
-                <div className="flex items-center my-4 space-x-3 duration-150">
+                <div className="flex items-center my-4 md:space-x-3 duration-150">
 
                     <button onClick={() => setShowTecs(prev => !prev)}
                     className='hidden md:block px-5 md:px-9 py-2 bg-white text-sm rounded font-semibold'>
@@ -73,7 +73,7 @@ export const ProjectComponent = ({app}) => {
 
                     {url.length > 0 &&
                         <a target='_blank' href={url} 
-                        className="px-5 md:px-9 py-2 bg-white text-sm rounded font-semibold">
+                        className="px-5 md:px-9 py-2 bg-white text-sm rounded font-semibold mr-2 md:mr-0">
                             Visitar
                         </a>
                     }

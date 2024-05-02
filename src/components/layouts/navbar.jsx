@@ -22,7 +22,7 @@ export const NavbarComponent = () => {
             </div>
 
             <a href="/Matias Muñoz.pdf" download='/Matias Muñoz.pdf' 
-            className="hidden md:flex hover:bg-white hover:text-black text-white border border-white text-xs/[2px] md:text-sm p-2 md:p-0 md:px-3 md:py-2 rounded">
+            className="hidden md:flex hover:bg-white hover:text-black text-white border text-xs/[2px] p-3 rounded">
                     Descargar CV
             </a>
 

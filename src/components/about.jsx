@@ -18,10 +18,11 @@ export const AboutComponent = () => {
     }, [])
 
     return(
-    <div id="about" className="h-full md:p-4 mb-12">
+    <div id="about" className="h-full">
 
-        <div className="mb-4">
-            <h2 className="sm:text-xl md:text-3xl text-white font-semibold">+ Sobre Mí</h2>
+        <div className="flex items-center mb-4">
+            <span className="text-2xl md:text-3xl font-semibold text-yellow-300 mr-1">+</span>
+            <h2 className="text-2xl md:text-3xl text-white font-semibold">Sobre Mí</h2>
         </div>
 
         <div className="md:flex items-center">

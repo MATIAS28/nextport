@@ -6,10 +6,10 @@ import { SkillsComponent } from '@/components/skills'
 
 export default function Home() {
   return (
-    <div className='w-[85%] md:w-4/5 mx-auto space-y-36'>
+    <div className='w-[85%] md:w-4/5 mx-auto space-y-52'>
         <IntroductionComponent/>
-        <AboutComponent/>
         <ProjectsComponent/>
+        <AboutComponent/>
         <SkillsComponent/>
     </div>
   )

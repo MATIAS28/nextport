@@ -24,8 +24,9 @@ function ProjectsComponent(){
     
     return(
         <div id="projects" className="h-full my-20 md:my-32 p-2">
-            <div>
-                <h2 className="sm:text-xl md:text-3xl text-white font-semibold text-start">+ Mis Proyectos</h2>
+            <div className="flex items-center mb-4">
+                <span className="text-2xl md:text-3xl font-semibold text-yellow-300 mr-1">+</span>
+                <h2 className="text-2xl md:text-3xl text-white font-semibold">Mis Proyectos</h2>
             </div>
 
             <div className="flex justify-center items-center mt-14 md:mt-20 w-full min-h-screen">
