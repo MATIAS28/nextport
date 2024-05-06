@@ -1,3 +1,4 @@
+import { CodeBracketIcon } from '@heroicons/react/24/solid'
 import { WrenchScrewdriver } from '@heroicons/react/solid'
 
 
@@ -11,7 +12,7 @@ export const SkillsComponent = () => {
         <div id='skills' className="w-full h-full md:mb-12">
 
                 <div className="flex items-center mb-4">
-                    <span className="text-2xl md:text-3xl font-semibold text-yellow-300 mr-1">+</span>
+                    <CodeBracketIcon className="w-7 h-7 fill-yellow-300 mr-2"/>
                     <h2 className="text-2xl md:text-3xl text-white font-semibold">Habilidades</h2>
                 </div>
 
@@ -22,7 +23,7 @@ export const SkillsComponent = () => {
                     en poner a prueba mis habilidades en cada proyecto para fortalecerlas y mejorarlas 🚀. 
                     Actualmente, estoy explorando TypeScript y React Native 📚 para agregar nuevas habilidades 
                     a mi arsenal y ampliar mis capacidades. ¡Próximamente las incluiré aquí para compartir mi 
-                    experiencia en estas tecnologías emocionantes! 💡
+                    experiencia en estas tecnologías! 💡
                     </p>
                 </div>
 

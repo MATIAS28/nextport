@@ -26,7 +26,7 @@ export const ProjectComponent = ({app}) => {
                     {showTecs ? 
                         <div className='tecsAnimation w-full h-80 md:h-64 bg-gray-100 rounded'>
                             <div className='p-3'>
-                                <h5 className='text-xl text-black font-semibold'>Stack:</h5>
+                                <h5 className='text-xl text-black font-semibold'>Tecnologías:</h5>
                                 <p className='text-lg font-medium'>{tec}</p>
                             </div>
                         </div>  
@@ -37,7 +37,7 @@ export const ProjectComponent = ({app}) => {
 
                 <button onClick={() => setShowTecs(prev => !prev)}
                     className='relative block md:hidden px-5 md:px-9 py-2 bg-white text-sm rounded font-semibold w-full my-7'>
-                        {showTecs ? 'Mostrar vistas previas'  : 'Mostrar Stack'}
+                        {showTecs ? 'Mostrar vistas previas'  : 'Mostrar Tecnologías'}
                 </button>
 
             </div>

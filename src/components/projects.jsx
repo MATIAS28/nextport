@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import { ProjectComponent } from "@/components/project/project"
 import { Loader } from '@/components/loader'
 import  axios  from "axios"
+import { ComputerDesktopIcon } from "@heroicons/react/24/solid"
 
 function ProjectsComponent(){
     const [Apps, setApps] = useState(null)
@@ -25,7 +26,7 @@ function ProjectsComponent(){
     return(
         <div id="projects" className="h-full my-20 md:my-32 p-2">
             <div className="flex items-center mb-4">
-                <span className="text-2xl md:text-3xl font-semibold text-yellow-300 mr-1">+</span>
+                <ComputerDesktopIcon className="w-7 h-7 fill-yellow-300 mr-2"/>
                 <h2 className="text-2xl md:text-3xl text-white font-semibold">Mis Proyectos</h2>
             </div>
 

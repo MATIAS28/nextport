@@ -1,5 +1,6 @@
 'use client'
 
+import { UserIcon } from "@heroicons/react/24/solid"
 import { useEffect, useState } from "react"
 
 
@@ -21,7 +22,7 @@ export const AboutComponent = () => {
     <div id="about" className="h-full">
 
         <div className="flex items-center mb-4">
-            <span className="text-2xl md:text-3xl font-semibold text-yellow-300 mr-1">+</span>
+            <UserIcon className="w-7 h-7 fill-yellow-300 mr-2"/>
             <h2 className="text-2xl md:text-3xl text-white font-semibold">Sobre Mí</h2>
         </div>
 
