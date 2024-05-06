@@ -11,7 +11,7 @@ export const ProjectComponent = ({app}) => {
     return(
         <div className="block mm:flex justify-between items-center mm:space-x-5 h-full md:h-80 ">
                 
-            <div className='w-full md:w-2/4 h-full md:h-72 mb-4'>
+            <div className='w-full md:w-2/4 2xl:w-1/3 h-full md:h-72 mb-4'>
 
                 {isRender &&
                     <div className='flex justify-center items-center mb-4'>

@@ -18,11 +18,11 @@ export const SkillsComponent = () => {
                 <div>
                 <div className="my-7">
                     <p className="text-gray-200 font-light text-xs md:text-base mt-3 w-full">
-                    He adquirido habilidades en estas tecnologías de forma autodidacta, 
-                    como mencioné en la sección 'Sobre mí', a través de prácticas con ideas propias, cursos en Udemy y tutoriales en YouTube. 
-                    Poseo conocimientos sólidos en JavaScript y en todo el stack MERN. 
-                    La práctica constante con estas tecnologías a lo largo de los últimos 5 años me ha capacitado 
-                    para emprender cualquier proyecto que imagine de manera independiente.
+                    Como desarrollador web fullstack especializado en el stack MERN, me he enfocado 
+                    en poner a prueba mis habilidades en cada proyecto para fortalecerlas y mejorarlas 🚀. 
+                    Actualmente, estoy explorando TypeScript y React Native 📚 para agregar nuevas habilidades 
+                    a mi arsenal y ampliar mis capacidades. ¡Próximamente las incluiré aquí para compartir mi 
+                    experiencia en estas tecnologías emocionantes! 💡
                     </p>
                 </div>
 

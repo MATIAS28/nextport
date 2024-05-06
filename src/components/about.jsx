@@ -28,13 +28,11 @@ export const AboutComponent = () => {
         <div className="md:flex items-center">
             <div className="my-7">
                 <p className="text-gray-200 font-light text-xs md:text-base mt-3 w-full md:w-3/4 duration-150">
-                ¡Hola! mi nombre es Matias, soy desarrollador <b className="font-bold">FullStack</b>. Mi fascinación por 
-                el mundo de la programación me ha impulsado a adquirir habilidades de manera autodidacta. 
-                Mi viaje comenzó en 2018 con "Eloquent <b className="font-bold">JavaScript</b>", un libro que me proporcionó una sólida 
-                introducción al lenguaje. Posteriormente, en 2019, me sumergí en el stack <b className="font-bold">MEAN</b> a través del 
-                curso de Víctor Robles <a className="font-semibold hover:text-yellow-300 border-b" href={courseLink} target="_blank">"Desarrollar una red social con JavaScript, Angular y NodeJS"</a>. En 2022, 
-                decidí explorar <b className="font-bold">React</b> por mi cuenta, lo que se ve reflejado en mis proyectos. La envergadura 
-                de las aplicaciones que he desarrollado es testimonio de mi progreso y dedicación.
+                ¡Hola! Soy Matías, Desarrollador web FullStack con sólidos conocimientos en JavaScript. 👨‍💻 Llevo 5 años desarrollando páginas web. 
+                Comencé mis primeros proyectos con el stack MEAN, y en estos últimos 2 años me he dedicado a crear mis proyectos más completos con React, 
+                además de reforzar mis conocimientos con las otras tecnologías del stack. En estos últimos años, me enfoqué en crear proyectos en los que 
+                pongo a prueba mis habilidades diseñando bases de datos mejor pensadas y escalables. En el frontend, me dediqué a crear diseños más 
+                estéticos e intuitivos. 
                 </p>
             </div>
 
