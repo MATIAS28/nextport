@@ -10,7 +10,7 @@ export const NavbarComponent = () => {
     }
 
     return(
-        <div className="md:w-4/5 md:mx-auto flex justify-around items-center p-0 py-8 md:py-6">
+        <div className="md:w-4/5 md:mx-auto flex justify-between items-center p-0 py-8 md:py-6">
             <div className="">
                 <img src="/logo.png" className="w-12 md:w-24" alt="" />
             </div>
