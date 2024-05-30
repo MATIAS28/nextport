@@ -24,14 +24,14 @@ function ProjectsComponent(){
     }, [])
     
     return(
-        <div id="projects" className="h-full my-20 md:my-32 p-2">
+        <div id="projects">
             <div className="flex items-center mb-4">
                 <ComputerDesktopIcon className="w-7 h-7 fill-yellow-300 mr-2"/>
                 <h2 className="text-2xl md:text-3xl text-white font-semibold">Mis Proyectos</h2>
             </div>
 
-            <div className="flex justify-center items-center mt-14 md:mt-20 w-full min-h-screen">
-                <div className="flex-col space-y-52 w-full h-full">
+            <div className="">
+                <div className="w-full h-full">
                     {Apps ?
                      Apps.map((app, i) => {
                         return(

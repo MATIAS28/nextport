@@ -9,8 +9,8 @@ export default function Home() {
     <div className='w-[85%] md:w-4/5 mx-auto space-y-52 md:mb-32'>
         <IntroductionComponent/>
         <ProjectsComponent/>
-        <AboutComponent/>
         <SkillsComponent/>
+        <AboutComponent/>
     </div>
   )
 }

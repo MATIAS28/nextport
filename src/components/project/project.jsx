@@ -9,9 +9,9 @@ export const ProjectComponent = ({app}) => {
     const isRender = server.toLowerCase().includes('render')
 
     return(
-        <div className="block mm:flex justify-between items-center mm:space-x-5 h-full md:h-80 ">
+        <div className="block md:flex justify-between items-start md:space-x-5 h-full my-20">
                 
-            <div className='w-full md:w-2/4 2xl:w-1/3 h-full md:h-72 mb-4'>
+            <div className='w-full md:w-2/4 2xl:w-1/3 h-full mb-4'>
 
                 {isRender &&
                     <div className='flex justify-center items-center mb-4'>
@@ -42,7 +42,7 @@ export const ProjectComponent = ({app}) => {
 
             </div>
 
-            <div className="w-full mm:w-2/4 h-full mm:h-72">
+            <div className="w-full mm:w-2/4 h-full">
 
                 <div>
                     <div className='flex justify-between items-center'>

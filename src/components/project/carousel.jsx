@@ -1,25 +1,22 @@
 'use client'
 
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 export const CarouselComponent = ({Imgs}) => {
     const [ imgs, setImgs ] = useState(Imgs)
-    const [ img, setImg ] = useState(null)
     const [ imgSelector, setImgSelector ] = useState(0)
 
-    useEffect(() => {
-        if(Imgs){
-            const imgSelected = imgs[imgSelector]
-            setImg(imgSelected)
-        }
-    }, [imgSelector])
-
     return(
-        <div className='previewAnimation w-full h-80 md:h-64'>
+        <div className='previewAnimation w-full'>
             <div className="flex items-center md:space-x-3 duration-150">
 
-                <img src={img} className="w-full h-64 mm:h-72 rounded border" alt=""/>
+                {imgs && imgs.length &&
+                    imgs.map((img, i) => {
+                        return <img key={i} src={img} className={`w-full h-64 mm:h-72 rounded border
+                        ${imgSelector === i ? 'block':'hidden'}`}/>
+                    })
+                }
 
             </div>
 

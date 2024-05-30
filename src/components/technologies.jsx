@@ -2,9 +2,8 @@
 
 export const Technologies = () => {
     return(
-        <div className="relative flex justify-center items-center">
-           <div className="absolute w-3/4 md:w-fit">
-            <div className="flex items-center space-x-4 md:space-x-6 h-fit bg-black p-2 md:p-3 rounded-lg border md:w-full">
+           <div className="w-full">
+            <div className="flex justify-between items-center h-fit p-2 md:p-3">
                 <div className="flex justify-center items-center">
                     <img src="/skills/mongo.png" className="w-5 md:w-12" alt="" />
                 </div>
@@ -37,6 +36,5 @@ export const Technologies = () => {
                 </div>
             </div>
            </div>
-        </div>
     )
 }
