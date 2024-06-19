@@ -9,12 +9,12 @@ export const ProjectComponent = ({app}) => {
     const isRender = server.toLowerCase().includes('render')
 
     return(
-        <div className="block md:flex justify-between items-start md:space-x-5 h-full my-20">
+        <div className="block lg:flex justify-between items-start lg:space-x-5 h-full mb-40">
                 
-            <div className='w-full md:w-2/4 2xl:w-1/3 h-full mb-4'>
+            <div className='w-full lg:w-2/4 h-full mb-4'>
 
                 {isRender &&
-                    <div className='flex justify-center items-center mb-4'>
+                    <div className='flex lg:hidden justify-center items-center h-12'>
                         <div className='flex items-center'>
                             <ExclamationCircleIcon className='w-5 mr-2 fill-gray-200'/>
                             <span className='text-xs md:text-sm text-gray-200 font-light w-full'>¡Advertencia! Render puede tardar en encender el servidor.</span>
@@ -42,11 +42,11 @@ export const ProjectComponent = ({app}) => {
 
             </div>
 
-            <div className="w-full mm:w-2/4 h-full">
+            <div className="lg:w-2/4 h-full">
 
                 <div>
-                    <div className='flex justify-between items-center'>
-                        <h3 className="text-xl mm:text-3xl secondary font-bold mb-3">{name}</h3>
+                    <div className='flex justify-between items-center mb-3'>
+                        <h3 className="text-xl mm:text-3xl secondary font-bold">{name}</h3>
                         <span className='text-xs md:font-semibold px-3 py-1 text-white tertiaryBack uppercase rounded-3xl'>
                             {server && server} 
                         </span>
@@ -82,8 +82,17 @@ export const ProjectComponent = ({app}) => {
                         <img src="/github.png" className="w-7" />
                     </a>
                 </div>
-            </div>
 
+                {isRender &&
+                <div className='hidden lg:flex items-center h-12'>
+                    <div className='flex items-center'>
+                        <ExclamationCircleIcon className='w-5 mr-2 fill-gray-200'/>
+                        <span className='text-xs md:text-sm text-gray-200 font-light w-full'>¡Advertencia! Render puede tardar en encender el servidor.</span>
+                    </div>
+                </div>
+                }
+
+            </div>
         </div>
     )
 }

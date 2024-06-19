@@ -26,9 +26,9 @@ export const AboutComponent = () => {
             <h2 className="text-2xl md:text-3xl text-white font-semibold">Sobre Mí</h2>
         </div>
 
-        <div className="md:flex items-center">
+        <div className="lg:flex items-center">
             <div className="my-7">
-                <p className="text-gray-200 font-light text-xs md:text-base mt-3 w-full md:w-3/4 duration-150">
+                <p className="text-gray-200 font-light text-xs md:text-base mt-3 w-full lg:w-3/4 duration-150">
                 ¡Hola! Soy Matías, Desarrollador web FullStack con sólidos conocimientos en JavaScript. 👨‍💻 Llevo 5 años desarrollando páginas web. 
                 Comencé mis primeros proyectos con el stack MEAN, y en estos últimos 2 años me he dedicado a crear mis proyectos más completos con React, 
                 además de reforzar mis conocimientos con las otras tecnologías del stack. En estos últimos años, me enfoqué en crear proyectos en los que 

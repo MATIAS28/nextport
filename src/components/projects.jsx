@@ -30,23 +30,19 @@ function ProjectsComponent(){
                 <h2 className="text-2xl md:text-3xl text-white font-semibold">Mis Proyectos</h2>
             </div>
 
-            <div className="">
-                <div className="w-full h-full">
-                    {Apps ?
-                     Apps.map((app, i) => {
-                        return(
-                            <ProjectComponent app={app} key={i}/>
-                        )
-                    })
+            <div className="w-full h-full mt-12">
+                {Apps ?
+                 Apps.map((app, i) => {
+                    if (app.index !== 4) return(
+                        <ProjectComponent app={app} key={i}/>
+                    )
+                })
 
-                    :
-                    
-                    <Loader/>
-
-                    }
-                </div>
-
+                :
                 
+                <Loader/>
+
+                }
             </div>
 
         </div>

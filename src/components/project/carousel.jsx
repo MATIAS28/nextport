@@ -9,11 +9,11 @@ export const CarouselComponent = ({Imgs}) => {
 
     return(
         <div className='previewAnimation w-full'>
-            <div className="flex items-center md:space-x-3 duration-150">
+            <div className="flex justify-center items-center duration-150">
 
                 {imgs && imgs.length &&
                     imgs.map((img, i) => {
-                        return <img key={i} src={img} className={`w-full h-64 mm:h-72 rounded border
+                        return <img key={i} src={img} className={`w-full lg:w-full h-64 mm:h-72 rounded border
                         ${imgSelector === i ? 'block':'hidden'}`}/>
                     })
                 }
