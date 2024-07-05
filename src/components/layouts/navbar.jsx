@@ -17,13 +17,13 @@ export const NavbarComponent = () => {
             </div>
 
             <div className="flex justify-around items-center w-3/4 md:w-1/3">
-                <button onClick={() => scrollHandler('about')}  className="text-xs md:text-sm text-white font-light hover:font-semibold duration-150 w-fit">Sobre mi</button>
-                <button onClick={() => scrollHandler('skills')}  className="text-xs md:text-sm text-white font-light hover:font-semibold duration-150 w-fit">Habilidades</button>
-                <button onClick={() => scrollHandler('projects')}  className="text-xs md:text-sm text-white font-light hover:font-semibold duration-150 w-fit">Proyectos</button>
+                <button onClick={() => scrollHandler('about')}  className="text-xs md:text-base text-white font-light hover:font-semibold duration-150 w-fit">Sobre mi</button>
+                <button onClick={() => scrollHandler('skills')}  className="text-xs md:text-base text-white font-light hover:font-semibold duration-150 w-fit">Habilidades</button>
+                <button onClick={() => scrollHandler('projects')}  className="text-xs md:text-base text-white font-light hover:font-semibold duration-150 w-fit">Proyectos</button>
             </div>
 
             <a href="/Matias Muñoz.pdf" download='/Matias Muñoz.pdf' 
-            className="hidden md:flex hover:bg-white hover:text-black text-white border text-xs/[2px] p-3 rounded-xl">
+            className="hidden md:flex bg-white font-semibold text-xs/[2px] p-3 rounded-xl">
                     Descargar CV
             </a>
             </div>
