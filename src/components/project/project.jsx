@@ -6,21 +6,11 @@ import { ExclamationCircleIcon } from "@heroicons/react/24/solid"
 export const ProjectComponent = ({app}) => {
     const [ showTecs, setShowTecs ] = useState(false)
     const { name, practices, tec, server, url, git, desc, imgs } = app
-    const isRender = server.toLowerCase().includes('render')
 
     return(
         <div className="block lg:flex justify-between items-start lg:space-x-5 h-full mb-40">
                 
             <div className='w-full lg:w-2/4 h-full mb-4'>
-
-                {isRender &&
-                    <div className='flex lg:hidden justify-center items-center h-12'>
-                        <div className='flex items-center'>
-                            <ExclamationCircleIcon className='w-5 mr-2 fill-gray-200'/>
-                            <span className='text-xs md:text-sm text-gray-200 font-light w-full'>¡Advertencia! Render puede tardar en encender el servidor.</span>
-                        </div>
-                    </div>
-                }
 
                 <div className='w-full flex justify-center'>
                     {showTecs ? 
@@ -33,7 +23,7 @@ export const ProjectComponent = ({app}) => {
                         :
                         <CarouselComponent Imgs={imgs} server={server}/>
                     }
-                </div>
+                </div> 
 
                 <button onClick={() => setShowTecs(prev => !prev)}
                     className='relative block md:hidden px-5 md:px-9 py-2 bg-white text-sm rounded font-semibold w-full my-7'>
@@ -82,15 +72,6 @@ export const ProjectComponent = ({app}) => {
                         <img src="/github.png" className="w-7" />
                     </a>
                 </div>
-
-                {isRender &&
-                <div className='hidden lg:flex items-center h-12'>
-                    <div className='flex items-center'>
-                        <ExclamationCircleIcon className='w-5 mr-2 fill-gray-200'/>
-                        <span className='text-xs md:text-sm text-gray-200 font-light w-full'>¡Advertencia! Render puede tardar en encender el servidor.</span>
-                    </div>
-                </div>
-                }
 
             </div>
         </div>
